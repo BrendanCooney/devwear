@@ -33,6 +33,11 @@ body {
     min-width: 260px;
 }
 
+.btn-black {
+    background: black;
+    color: white;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
@@ -68,7 +73,6 @@ body {
     background: #000 !important;
 }
 
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -92,7 +96,9 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
