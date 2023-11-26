@@ -6,9 +6,15 @@ The Apparel Store for Developers!
 
 Build and SetupTechnologies:
 This Ecommerce Project uses:
- Django, 
+ HTML,
+ CSS'
+ Javascript' 
+ Django,
  DJ Databases, 
  Psychopg Libraries,
+ Postgres,
+ Stripe Payments, 
+
  
 
 ## Gitpod Reminders
