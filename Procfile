@@ -1,1 +1,1 @@
-web: gunicorn devwear.wsgi
+web: gunicorn devwear.wsgi:application
