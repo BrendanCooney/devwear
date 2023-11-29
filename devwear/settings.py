@@ -134,7 +134,7 @@ WSGI_APPLICATION = 'devwear.wsgi.application'
 #}
 
 if 'DATABASE_URL' in os.environ:
-DATABASES = {
+    DATABASES = {
      'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 else:
