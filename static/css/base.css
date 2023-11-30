@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('https://brendancooney-devwear.s3.eu-west-1.amazonaws.com/media/devwear_home_web_2.jpg') no-repeat center center fixed;
+    background: url('https://brendancooney-devwear.s3.eu-west-1.amazonaws.com/media/devwearbg_4.gif') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
