@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /profiles/
+Disallow: /bag/
+Sitemap: https://devwear-0c4ac54770df.herokuapp.com/sitemap.xml
+
+
