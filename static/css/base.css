@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 
+/*removing fixed after center center*/
 body {
     background: url('https://brendancooney-devwear.s3.eu-west-1.amazonaws.com/media/devwearbg_4.gif') no-repeat center center fixed;
     background-size: cover;
