@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY','')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'True' in os environ
+# DEBUG = 'True' in os environ
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-brendancooney-devwear-0ykx5pim6ib.ws-eu106.gitpod.io','devwear.herokuapp.com', 'localhost', 'devwear-0c4ac54770df.herokuapp.com' ]
@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
 
-    #Other
+    # Other
     'crispy_forms',
     'storages',
 ]
@@ -83,7 +83,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', #required by allauth
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -125,7 +125,7 @@ WSGI_APPLICATION = 'devwear.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': BASE_DIR / 'db.sqlite3',
