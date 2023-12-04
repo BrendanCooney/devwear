@@ -93,6 +93,44 @@ USER STORY: <Receive an email after registering >#8
 As a Site user/Shopper I can **Receive an email after registering ** so that **Verify that my account registration was successful **
 ![email registration](<media/Email Registration.PNG>)
 
+USER STORY: <Have a personalised user profile >#9
+As a Site user/Shopper I can **Have a personalised user profile ** so that **View my personal order history **
+
+USER STORY: <Sort the list of available products>#10
+As a Shopper I can Sort the list of available products so that ** I can easily identify the best priced and categorically sorted products**
+
+USER STORY: <Sort a specific category of a product>#11
+As a Shopper I can Sort a specific category of a product so that I can find the best-priced product in a category or sort products in a category
+
+USER STORY: <Sort multiple categories simultaneously>#12
+As a Shopper I can Sort multiple categories simultaneously so that Find the best priced product across categories
+
+USER STORY: <Search for a product by name or description>#13
+As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase
+
+
+devwear #14
+USER STORY: <Easily see what Ive serached for and the number of results>#14
+As a Shopper I can Easily see what I've serached for and the number of results so that I can quickly decide whether the product I want is available
+
+USER STORY: <Easily select the size and quantity of a product>#15
+As a Shopper I can Easily select the size and quantity of a product so that Ensure I don’t accidentally select the wrong product quantity or size
+
+
+USER STORY: <View Items in my bag to be purchased>#16
+As a Shopper I can View Items in my bag to be purchased so that Identify the total cost of my purchase before checkout
+
+
+USER STORY: <Adjsut the quantity of a product when purchasing it>#17
+As a Shopper I can Adjsut the quantity of a product when purchasing it so that Easily make changes to my purchase before checkout
+
+USER STORY: <Easily enter my payment information>#18
+As a Shopper I can Easily enter my payment information so that I can checkout quickly with no hassles
+
+USER STORY: <Feel my personal and payment information is safe and secure>#19
+As a Shopper I can capability so that ** I can onfidently provide the needed information to make a purchase **
+
+
 
 ## Ecommerce Business Model & Marketing Strategy
 This site sells goods to individual customers, and therefore follows a Business to Customer model. It is a simple B2C strategy, as it focuses on individual transactions, and doesn't need anything such as monthly/annual subscriptions.
@@ -150,3 +188,18 @@ The Lighthouse Tests show the following results:
 ### CSS Validation
 The W3C Validator approved the CSS for the app Url
 ![CSS Validation](<media/CSS Validation.PNG>)
+
+### HTML
+Unfortunately I was not able to correct this bug in time for submission it has to do with the lists in the nav bar but I'm not sure how to fix it.
+![HTML Error](<media/HTML Errors.PNG>)
+
+
+### Python Testing:
+
+
+
+## Data Model
+The below graphic provides an idea of the data model.
+
+![Data Model](<media/Devwear_Data Model.png>)
+
