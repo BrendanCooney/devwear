@@ -146,3 +146,7 @@ I have used the subscribe button at the bottom of the base.html file as advised 
 The Lighthouse Tests show the following results:
 
 ![Light House Testing](media/Lighthouse.PNG)
+
+### CSS Validation
+The W3C Validator approved the CSS for the app Url
+![CSS Validation](<media/CSS Validation.PNG>)
