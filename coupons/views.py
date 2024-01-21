@@ -12,7 +12,7 @@ def coupon_apply(request):
     if form.is_valid():
         code = form.cleaned_data['code']
         try:
-            coupon = Coupon.objects.get(code__iexact=code
+            coupon = Coupon.objects.get(code__iexact=code,
                                         valid_from__lte=now,
                                         valid_to__gte=now,
                                         active=True)
