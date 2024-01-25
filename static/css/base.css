@@ -4,7 +4,7 @@ html {
 
 /*removing fixed after center center*/
 body {
-    background: url('https://brendancooney-devwear.s3.eu-west-1.amazonaws.com/media/Devwear_BG2.png') no-repeat center center fixed;
+    background: url('https://brendancooney-devwear.s3.eu-west-1.amazonaws.com/media/Devwear+Home_b.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
