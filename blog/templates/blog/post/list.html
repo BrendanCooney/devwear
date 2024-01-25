@@ -1,17 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}DevWear Blog{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
- <h1>DevWear Blog</h1>
- {% for post in posts %}
- <h2>
- <a href="{% url 'blog:post_detail' post.id %}">
- {{ post.title }}
- </a>
- </h2>
- <p class="date">
- Published {{ post.publish }} by {{ post.author }}
- </p>
- {{ post.body|truncatewords:30|linebreaks }}
- {% endfor %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {{ posts }}
+            </div>
+        </div>
+    </div>
 {% endblock %}
