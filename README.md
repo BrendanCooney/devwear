@@ -4,12 +4,18 @@
 Welcome To DevWear,
 The Apparel Store for Developers!
 
+## Responsive Layout
+![Responsive Layout](media/Responsive2.PNG)
+
+The layout is responsive and has been tested with various screen sizes. This screenshot was taken with the ui.dev/amiresponsive website.
+
+
 [Link to live Website:](https://devwear-0c4ac54770df.herokuapp.com)
 
-
+## Link to Repository
+[Link to Repository:](https://github.com/BrendanCooney/devwear)
 
 When designing this site, I wanted to keep the design simple. Due to time constraints I kept much of the CSS used in our walktough project. I do like the design and it is simple and clean. The goal of the site was to show that it can be quite simple to design and generate apparel products for Ecommerce
-
 
 
 Build and SetupTechnologies:
@@ -23,12 +29,26 @@ This Ecommerce Project uses:
  Postgres,
  Stripe Payments, 
 
- 
+## Business Model
+The DevWear Business model is a Business to Consumer (B to C) business model. The business sells apparel and accesories to software developers. 
 
-## Responsive Layout
-![Responsive Layout](media/Responsive1.PNG)
+Currently the site is an exmple of the possible live site. Please do not make any purchases as you will not get a product yet. 
+Please only use the testing cards on the [Stripe Website](https://stripe.com/docs/testing).
 
-The layout is responsive and has been tested with various screen sizes. This screenshot was taken with the ui.dev/amiresponsive website.
+## Ecommerce Business Model & Marketing Strategy
+This site sells goods to individual customers, and therefore follows a Business to Customer model. It is a simple B2C strategy, as it focuses on individual transactions, and doesn't need anything such as monthly/annual subscriptions.
+
+The Target market for the business is web developers. 
+
+Social media will be used to build a community of users around the business, and boost site visitor numbers, especially when using larger platforms such a Facebook.
+
+A newsletter list will be used by the business to send regular messages to site users. For example, what items are on special offer, new items in stock, updates to business hours, notifications of events, and much more!
+
+Facebook Ads will be used to grow the list. This will be done by sending potential customers to the Landing Page Sign up form through a link. 
+
+Below are some images of the Market Research done for the project:
+![Market Research](media/Market%20Research1.PNG)
+![Market Research](media/Market%20Research2.PNG)
 
 
 ## Product Design
@@ -131,16 +151,6 @@ USER STORY: <Feel my personal and payment information is safe and secure>#19
 As a Shopper I can capability so that ** I can onfidently provide the needed information to make a purchase **
 
 
-
-## Ecommerce Business Model & Marketing Strategy
-This site sells goods to individual customers, and therefore follows a Business to Customer model. It is a simple B2C strategy, as it focuses on individual transactions, and doesn't need anything such as monthly/annual subscriptions.
-
-The Target market for the business is we developers. 
-
-Social media will be used to build a community of users around the business, and boost site visitor numbers, especially when using larger platforms such a Facebook.
-
-A newsletter list can be used by the business to send regular messages to site users. For example, what items are on special offer, new items in stock, updates to business hours, notifications of events, and much more!
-
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
 The Seo is foucussed on people that like apparel and that are developers. The appropriate key words have been added to the Meta Section of base.html 
@@ -183,7 +193,7 @@ I have used the subscribe button at the bottom of the base.html file as advised 
 ### Lighthouse Testing
 The Lighthouse Tests show the following results:
 
-![Light House Testing](media/Lighthouse.PNG)
+![Light House Testing](media/NewLighthouse.PNG.PNG)
 
 ### CSS Validation
 The W3C Validator approved the CSS for the app Url
