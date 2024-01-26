@@ -21,6 +21,7 @@ class Post(models.Model):
                                 on_delete=models.CASCADE,
                                 related_name='blog_posts')
     image = models.ImageField(null=True, blank=True)
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     body = models.TextField()
     excerpt = models.TextField(blank=True)
     publish = models.DateTimeField(default=timezone.now)
