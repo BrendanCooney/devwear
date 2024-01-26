@@ -188,28 +188,15 @@ Below are some screenshots of the Facebook Page:
 I have used the subscribe button at the bottom of the base.html file as advised in the course work this subscribes the user to a mailchimp database. This is temporary and will be upgraded at a later stage. 
 ![Email Subscribe](media/email_subscribe.PNG)
 
-## Testing 
-
-### Lighthouse Testing
-The Lighthouse Tests show the following results:
-
-![Light House Testing](media/NewLighthouse.PNG.PNG)
-
-### CSS Validation
-The W3C Validator approved the CSS for the app Url
-![CSS Validation](<media/CSS Validation.PNG>)
-
-### HTML
-Unfortunately I was not able to correct this bug in time for submission it has to do with the lists in the nav bar but I'm not sure how to fix it.
-![HTML Error](<media/HTML Errors.PNG>)
-
-
-### Python Testing:
-
-
 
 ## Data Model
-The below graphic provides an idea of the data model.
+The below graphic provides an idea of the data model. The Model has been updated to include a Blog which active. The Coupon model is a work in progress and will be worked on after assessment. I have included this in Bugs and Wishlist. 
 
-![Data Model](<media/Devwear_Data Model.png>)
+![Data Model](<media/Models.png>)
+
+## Bugs Fixes and Project Continuation Wishlist
+At the time of resubmission realise that I would like to document testing further. I have created a Blog Model and Implemented it.
+I also started a Coupon Model but was not able to complete it due to time constraints. I would like to take this section live after the assessment is complete. I would also like to take the ecommerce section live and convert the stripe keys to live keys and begin actively promoting the business.
+
+I have attempted to take learnings from outside the course and have been advised to use a book called Django By Example which I will use to further develop this site or redevelop it from the beginning useing the course material and the book. 
 
