@@ -194,9 +194,66 @@ The below graphic provides an idea of the data model. The Model has been updated
 
 ![Data Model](<media/Models.png>)
 
+
+## Deployment
+
+The live deployed application can be found deployed on [Heroku](https://devwear-0c4ac54770df.herokuapp.com)
+
+The below methods were used to Deploy the project. 
+
+# Code Institute Template
+1. Click the 'Use This Template' button.
+2. Name your repository and write a description (optional).
+3. Click the 'Create Repository from Template' to create the repository.
+4. Click the 'GitPod' button to create a new workspace.
+5. When working on the project, ensure to open the workspace from GitPod, this will open your previous workspace ratehr than creating a new one.
+6. Use the following commands to commit your work:
+* 'git add' adds all the modified files to a staging area.
+* 'git commit -m "Write commit message"' commits the changes to the local repository.
+* 'git push' pushes all your committed changes to the GitHub repository.
+
+# Django Setup 
+
+1. In the terminal enter, pip3 install 'django<4'.
+2. Then enter, django-admin startproject your project name
+3. You will see the django project folder, including settings.py and urls.py.
+4. Back to the terminal, enter touch .gitignore.
+5. In the .gitignore file enter, *.sqlite3 and *.pyc and pycache
+6. Run the project by entering python3 manage.py runserver to check it is running well.
+7. Your page should show a rocket with 'The install worked successfully! Congratulations!' below it.
+8. Back in the terminal CTRL + C to quit the server.
+9. To migrate enter, python3 manage.py migrate.
+10. To create a superuser enter, python3 manage.py createsuperuser.
+11. Provide username, email and password.
+12. Then, git add . in the terminal
+13. Then, git commit -m "your commit message"
+14. Finally, git push to push the changes.
+
+# ElephantSQL Database:
+
+This project uses ElephantSQL for the PostgreSQL Database.
+
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+
+* Click Create New Instance to start a new database.
+* Provide a name (this is commonly the name of the project: retro-reboot).
+* Select the Tiny Turtle (Free) plan.
+* You can leave the Tags blank.
+* Select the Region and Data Center closest to you.
+* Once created, click on the new database name, where you can view the database URL and Password.
+
+
+# Amazon AWS: 
+
+This project uses AWS to store media and static files online as Heroku doesn't persist this type of data.
+
+Once you've created an AWS account and logged-in, follow these series of steps to get your project connected. Make sure you're on the AWS Management Console page.
+
+
+
 ## Bugs Fixes and Project Continuation Wishlist
 At the time of resubmission realise that I would like to document testing further. I have created a Blog Model and Implemented it.
 I also started a Coupon Model but was not able to complete it due to time constraints. I would like to take this section live after the assessment is complete. I would also like to take the ecommerce section live and convert the stripe keys to live keys and begin actively promoting the business.
 
-I have attempted to take learnings from outside the course and have been advised to use a book called Django By Example which I will use to further develop this site or redevelop it from the beginning useing the course material and the book. 
+I have attempted to take learnings from outside the course and have been advised to use a book called Django By Example which I will use to further develop this site or redevelop it from the beginning using the course material and the book. 
 
