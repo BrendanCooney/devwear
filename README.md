@@ -201,7 +201,7 @@ The live deployed application can be found deployed on [Heroku](https://devwear-
 
 The below methods were used to Deploy the project. 
 
-# Code Institute Template
+## Code Institute Template
 1. Click the 'Use This Template' button.
 2. Name your repository and write a description (optional).
 3. Click the 'Create Repository from Template' to create the repository.
@@ -212,7 +212,7 @@ The below methods were used to Deploy the project.
 * 'git commit -m "Write commit message"' commits the changes to the local repository.
 * 'git push' pushes all your committed changes to the GitHub repository.
 
-# Django Setup 
+## Django Setup 
 
 1. In the terminal enter, pip3 install 'django<4'.
 2. Then enter, django-admin startproject your project name
@@ -229,26 +229,109 @@ The below methods were used to Deploy the project.
 13. Then, git commit -m "your commit message"
 14. Finally, git push to push the changes.
 
-# ElephantSQL Database:
+## ElephantSQL Database:
 
 This project uses ElephantSQL for the PostgreSQL Database.
 
-To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+1. Open ElephantSQL.
+2. Register or Login.
+3. Click 'Create New Instance'. Create a name and select a region.
+4. Confirm new instance by clicking 'Create Instance'.
+5. Click the instance you created.
+6. Copy the URL to the clipboard.
+7. Paste it into your DATABASE_URL = "enter url here" in .env file.
 
-* Click Create New Instance to start a new database.
-* Provide a name (this is commonly the name of the project: retro-reboot).
-* Select the Tiny Turtle (Free) plan.
-* You can leave the Tags blank.
-* Select the Region and Data Center closest to you.
-* Once created, click on the new database name, where you can view the database URL and Password.
+
+## Heroku Setup
+
+Open Heroku.
+1. Register or Login.
+2. Click 'Create New App'.
+3. Enter app name and select the region.
+4. Click 'Create App'.
+5. Under the 'Deploy' tab, click 'Connect to GitHub'.
+6. Enter your GitHub credentials.
+7. Search for your repository and click 'Connect'.
+8. In the 'Settings' tab, scroll to 'Reveal Config Vars' and copy the ElephantSQL URL from the .env file.
+9. In config vars, set PORT to 8000 and add the SECRET_KEY from the .env file.
 
 
-# Amazon AWS: 
+## Stripe Setup:
 
-This project uses AWS to store media and static files online as Heroku doesn't persist this type of data.
+1. Register for a Stripe account.
+2. Go to 'Developers' on 'Dashboard'.
+3. Go to 'API Keys' to view public and secret key.
+4. In .env file add STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY.
+5. Copy in public and secret keys from Stripe.
+6. Head to Heroku and open the app.
+7. Click on 'settings' and 'Reveal Config Vars'
+8. Add the STRIPE_PUCLIC_KEY AND STRIPE_SECERET_KEY with their keys from Stripe.
 
-Once you've created an AWS account and logged-in, follow these series of steps to get your project connected. Make sure you're on the AWS Management Console page.
+## Amazon AWS Setup: 
 
+1. Create a Amazon AWS account.
+2. Open S3 application and create a bucket.
+3. Select an AWS Region.
+4. Uncheck the 'Block All Public Access' setting and acknowledge that the bucket will be public.
+5. In 'Properties', go to the 'Static Website Hosting' and click 'Edit'.
+6. Turn on 'Static Website Hosting' and set index.html and errors.html values.
+7. In 'Permissions', click 'Edit' on the CORS configuration.
+8. Edit 'Bucket Policy' and generate and set configuration 'Bucket Policy'.
+9. Go to 'Access Control List' and set list object permission for everyone.
+10. Open IAM application and set up a user group.
+11. Click on 'Policies' and 'Create Policy'.
+12. Click on the JSON tab and import a pre-built Amazon policy called AmazonS3FullAccess.
+13. Set following settings in JSON tab.
+14. Click 'Review Policy', and provide name and description then 'Create Policy'.
+15. Navigate to 'Groups' then 'Permissions' and 'Add Permission' then 'Attach Policy'.
+16. Click 'Add User' and create one.
+17. Add the user to the group and download the CSV with the user's access credentials.
+18. Add the AWS code in settings.py with an environment variable called USE_AWS.
+
+## Google Mail:
+
+1. Create a Gmail account.
+2. Login and go to settings and click Other Google Account Settings.
+3. Turn on two-step verification following the steps to enable it.
+4. Once verified click on app passwords. Select 'Other' and provide a name. 'Django' for example.
+5. Click 'Create' and a 16-digit password will generate. Copy it to your clipboard.
+6. In the .env file, add EMAIL_HOST_PASS with the 16-digit password.
+7. In the .env file, add EMAIL_HOST_USER with the email address from your gmail account.
+8. Confirm the following values in settings.py and add the variables to your config vars in Heroku to send real emails.
+
+## Development:
+
+### Fork:
+1. Log into GitHub and click on repository to download
+2. Click the 'Fork' button in the top right-hand corner
+3. Select a different owner if necessary
+4. Click on 'Create Fork'
+5. The repository is now in your account and can be changed (Changes made to a forked repository will not affect the original).
+
+### Clone:
+1. Navigate to the main repository page.
+2. Click on the 'Code' dropdown menu above the list of files.
+3. Choose a method to copy the URL for the repository.
+4. In the work environment, open Git Bash and change the current directory to target location for cloned repository.
+5. Type 'git clone' followed by the copied URL and press 'Enter'.
+
+### Download Zip:
+1. Log into GitHub and click on the repository to download.
+2. Select 'Code' and click 'Download Zip'.
+3. Once the download is finished, extract ZIP file and use it in the local environment.
+
+## Credits:
+
+
+## Acknowledgements:
+
+I would like to thank:
+
+1. The Code Institute and the MSLETB for the great opportunity.
+2. My wife Anzelle and my two sons Adrian and Leo for being so supportive and patient with me for over a year so that I could put in the extra time and finish this course. 
+3. Cohort facilitator Paul Thomas O'Riordan, for their general advice and support through out this course.
+4. My Mentor Spencer Barribal who has given me great Guidance and Taught me alot. 
+5. Team Members on my cohort: Dave Trevaskis, Indrek Mannik, Charles Fowler, Dayana & Darragh. 
 
 
 ## Bugs Fixes and Project Continuation Wishlist
