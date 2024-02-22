@@ -321,7 +321,9 @@ Open Heroku.
 3. Once the download is finished, extract ZIP file and use it in the local environment.
 
 ## Credits:
+I have learned a lot from these resources they helped me along the way each time I got stuck in my progress. 
 
+1. [Django By Exmaple](https://github.com/PacktPublishing/Django-4-by-example)
 
 ## Acknowledgements:
 
