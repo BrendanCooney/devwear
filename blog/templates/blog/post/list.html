@@ -32,11 +32,11 @@
                                 </h3>
                                 <p>Author: {{post.author}}</p>
                                 {% if post.image %}
-                                <a href="">
+                                <a href="{% url 'blog:post_detail' post.id %}">
                                     <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
                                 </a>
                                 {% else %}
-                                <a href="">
+                                <a href="{% url 'blog:post_detail' post.id %}">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                                 </a>
                                 {% endif %}
