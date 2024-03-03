@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+{% block title %}
+<h1>Add a comment</h1>
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            {% if sent %}
+                <h1>E-mail successfully sent</h1>
+                <p>
+                "{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
+                </p>
+            {% else %}
+                <h3>Share "{{ post.title }}" by e-mail</h3>
+                <form method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+                <input type="submit" value="Send e-mail">
+                </form>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
