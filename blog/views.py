@@ -27,6 +27,7 @@ def post_detail(request, slug):
                    'comments': comments,
                    'form': form})
 
+
 def post_share(request, post_id):
     # Retrieve post by id
     post = get_object_or_404(Post, id=post_id, status=Post.Status.PUBLISHED)
@@ -45,15 +46,20 @@ def post_share(request, post_id):
                 f"{post.title}"
             message = f"Read {post.title} at {post_url}\n\n" \
                 f"{cd['name']}\'s comments: {cd['comments']}"
-            send_mail(subject, message, 'advicast@gmail.com',
-                [cd['to']])
-            sent = True
-
-            return render(request,
-                  'blog/post/detail.html',
+            if send_mail(subject, message, 'advicast@gmail.com',[cd['to']]):
+                sent = True
+                return render(request,
+                  'blog/post/share.html',
                   {'post': post,
-                   'comments': comments,
+                   'comments': 'Success',
                    'form': form})
+            else:
+                sent = False
+                form = EmailPostForm()
+                return render(request, 'blog/post/share.html', {'post': post,
+                                                                'form': form,
+                                                                'comments': 'Success',
+                                                                'sent': sent})
 
     else:
         form = EmailPostForm()
@@ -74,6 +80,11 @@ def post_comment(request, post_id):
         comment.post = post
         # Save the comment to the database
         comment.save()
+        return render(request, 'blog/post/comment.html',
+                      {'post': post,
+                      'form': form,
+                      'comment': comment})
+    else:
         return render(request, 'blog/post/comment.html',
                       {'post': post,
                       'form': form,

@@ -21,7 +21,7 @@
                 <h2>Your comment has been shared.</h2>
                 <p><a href="{% url 'blog:post_detail' post.id %}">Back to the post</a></p>
                 {% else %}
-                {% include "blog/post/includes/comment_form.html" %}
+                {% include "blog/post/comment_share.html" %}
                 {% endif %}
         </div>
     </div>
