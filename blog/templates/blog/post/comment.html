@@ -12,23 +12,19 @@
 {% block content %}
 {% block title %}
 <h1>Add a comment</h1>
+{% endblock %}
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            {% if sent %}
-                <h1>E-mail successfully sent</h1>
-                <p>
-                "{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
-                </p>
-            {% else %}
-                <h3>Share "{{ post.title }}" by e-mail</h3>
-                <form method="post">
-            {{ form.as_p }}
-            {% csrf_token %}
-                <input type="submit" value="Send e-mail">
-                </form>
-            {% endif %}
+            {% block content %}
+                {% if comment %}
+                    <h2>Your comment has been added.</h2>
+                    <p><a href="{{ post.get_absolute_url }}">Back to the post</a></p>
+                    {% else %}
+                    {% include "blog/post/includes/comment_form.html" %}
+                {% endif %}
+            {% endblock %}
         </div>
     </div>
 </div>

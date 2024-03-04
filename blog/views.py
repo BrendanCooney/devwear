@@ -12,18 +12,20 @@ def post_list(request):
                   {'posts': posts})
 
 
-def post_detail(request, year, month, day, post):
+def post_detail(request, slug):
     post = get_object_or_404(Post,
-                             id=id,
+                             slug=slug,
                              status=Post.Status.PUBLISHED)
-    slug=post,
-    pubish__year=year,
-    publish__month=month,
-    publish__day=day,
-    
+    # List of active comments for this post
+    comments = post.comments.filter(active=True)
+    # Form for users to comment
+    form = CommentForm()
+
     return render(request,
                   'blog/post/detail.html',
-                  {'post': post})
+                  {'post': post,
+                   'comments': comments,
+                   'form': form})
 
 def post_share(request, post_id):
     # Retrieve post by id
