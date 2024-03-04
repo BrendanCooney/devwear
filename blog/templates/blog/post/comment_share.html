@@ -1,5 +1,5 @@
 
-<h2>Add a new comment</h2>
+<h2>Share this post</h2>
 <form action="{% url 'blog:post_share' post.id %}" method="post">
     {{ form.as_p }}
     {% csrf_token %}
