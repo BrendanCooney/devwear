@@ -19,7 +19,7 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 {% if comment %}
                 <h2>Your comment has been added.</h2>
-                <p><a href="{{ post.get_absolute_url }}">Back to the post</a></p>
+                <p><a href="{% url 'blog:post_detail' post.id %}">Back to the post</a></p>
                 {% else %}
                 {% include "blog/post/includes/comment_form.html" %}
                 {% endif %}
