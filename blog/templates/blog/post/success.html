@@ -22,8 +22,8 @@
                     <h1>E-mail successfully sent</h1>
                         <p>
                         "{{ post.title }}" was successfully sent to {{ form.cleaned_data.to }}.
+                        <a href="{{ post.get_absolute_url }}">Back to the post</a>
                         </p>
-                    <p><a href="{{ post.get_absolute_url }}">Back to the post</a></p>
                     {% else %}
             {% endif %}  
         </div>
