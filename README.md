@@ -334,11 +334,12 @@ I would like to thank:
 3. Cohort facilitator Paul Thomas O'Riordan, for their general advice and support through out this course.
 4. My Mentor Spencer Barribal who has given me great Guidance and Taught me alot. 
 5. Team Members on my cohort: Dave Trevaskis, Indrek Mannik, Charles Fowler, Dayana & Darragh. 
+6. Kevin Dodson for his guidance on the project. 
 
 
 ## Bugs Fixes and Project Continuation Wishlist
 At the time of resubmission realise that I would like to document testing further. I have created a Blog Model and Implemented it.
-I also started a Coupon Model but was not able to complete it due to time constraints. I would like to take this section live after the assessment is complete. I would also like to take the ecommerce section live and convert the stripe keys to live keys and begin actively promoting the business.
+I also started a Coupon Model but changed my mind to the idea of creating comments on the blog application. This has been completed.  I would like to take this section live after the assessment is complete. I would also like to take the ecommerce section live and convert the stripe keys to live keys and begin actively promoting the website as an e-commerce business with a new domain. 
 
 I have attempted to take learnings from outside the course and have been advised to use a book called Django By Example which I will use to further develop this site or redevelop it from the beginning using the course material and the book. 
 

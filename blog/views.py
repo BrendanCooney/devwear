@@ -36,7 +36,7 @@ def post_share(request, post_id):
     if request.method == 'POST':
         # Form was submitted
         form = EmailPostForm(request.POST)
-        if form.is_valid():
+        if form.is_valid ():
             # Form fields passed validation
             cd = form.cleaned_data
             # ... send email
@@ -47,21 +47,24 @@ def post_share(request, post_id):
             message = f"Read {post.title} at {post_url}\n\n" \
                 f"{cd['name']}\'s comments: {cd['comments']}"
             if send_mail(subject, message, 'advicast@gmail.com',[cd['to']]):
+                print('line 51')
                 sent = True
+                
                 return render(request,
                   'blog/post/share.html',
                   {'post': post,
-                   'comments': 'Success',
+                   'sent': 'sent',
                    'form': form})
             else:
+                print('line 59')
                 sent = False
                 form = EmailPostForm()
                 return render(request, 'blog/post/share.html', {'post': post,
                                                                 'form': form,
-                                                                'comments': 'Success',
                                                                 'sent': sent})
 
     else:
+        print('line 68')
         form = EmailPostForm()
         return render(request, 'blog/post/share.html', {'post': post,
                                                         'form': form,
