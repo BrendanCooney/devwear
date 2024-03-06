@@ -85,16 +85,19 @@ I used Excel to create a user story template and continued to create all user st
 
 USER STORY: <Navigate the Store Menu>#1
 As a site visitor I can Navigate the Store Menu so that **See the Products and buy a product **
+![navigatemenu](media/Navigate%20Store%20Menu.PNG)
 
 USER STORY: <Navigate the Store Products>#2
 As a **Site Visitor ** I can Navigate the Products so that **See the Prices **
+![productsbyprice](media/productsbyprice.PNG)
 
 USER STORY: <Navigate the Categories>#3
 As a Site Visitor I can Navigate the Product Categories so that **See the Categories **
+![navigatecategories](media/navigate_categories.PNG)
 
 USER STORY: <Easily view the total of my purchases >#4
 As a Site User/shopper I can **Easily view the total of my purchases ** so that Avoid spending too much
-
+![totalpurchaseprice](media/totalpurchase.PNG)
 
 USER STORY: <Easily register for an account >#5
 As a Site user/Shopper I can **Easily register for an account ** so that **I have a personal account and view my profile **
@@ -115,23 +118,27 @@ As a Site user/Shopper I can **Receive an email after registering ** so that **V
 
 USER STORY: <Have a personalised user profile >#9
 As a Site user/Shopper I can **Have a personalised user profile ** so that **View my personal order history **
+![userprofile](media/profile.PNG)
 
 USER STORY: <Sort the list of available products>#10
 As a Shopper I can Sort the list of available products so that ** I can easily identify the best priced and categorically sorted products**
 
 USER STORY: <Sort a specific category of a product>#11
-As a Shopper I can Sort a specific category of a product so that I can find the best-priced product in a category or sort products in a category
+As a Shopper I can Sort a specific category of a product so that I can find the best-priced product in a category or sort products in a category.
+![productscategory](media/productsbycategory.PNG)
 
 USER STORY: <Sort multiple categories simultaneously>#12
 As a Shopper I can Sort multiple categories simultaneously so that Find the best priced product across categories
+![catergory](media/categoryandedit.PNG)
 
 USER STORY: <Search for a product by name or description>#13
 As a Shopper I can Search for a product by name or description so that I can find a specific product I'd like to purchase
-
+![serach](media/search.PNG)
 
 devwear #14
 USER STORY: <Easily see what Ive serached for and the number of results>#14
 As a Shopper I can Easily see what I've serached for and the number of results so that I can quickly decide whether the product I want is available
+![search](media/search.PNG)
 
 USER STORY: <Easily select the size and quantity of a product>#15
 As a Shopper I can Easily select the size and quantity of a product so that Ensure I don’t accidentally select the wrong product quantity or size
@@ -139,7 +146,7 @@ As a Shopper I can Easily select the size and quantity of a product so that Ensu
 
 USER STORY: <View Items in my bag to be purchased>#16
 As a Shopper I can View Items in my bag to be purchased so that Identify the total cost of my purchase before checkout
-
+![itemsinbag](media/totalpurchase.PNG)
 
 USER STORY: <Adjsut the quantity of a product when purchasing it>#17
 As a Shopper I can Adjsut the quantity of a product when purchasing it so that Easily make changes to my purchase before checkout
@@ -148,7 +155,7 @@ USER STORY: <Easily enter my payment information>#18
 As a Shopper I can Easily enter my payment information so that I can checkout quickly with no hassles
 
 USER STORY: <Feel my personal and payment information is safe and secure>#19
-As a Shopper I can capability so that ** I can onfidently provide the needed information to make a purchase **
+As a Shopper I can feel secure so that ** I can confidently provide the needed information to make a purchase **
 
 
 
@@ -187,13 +194,13 @@ Below are some screenshots of the Facebook Page:
 
 ## Newsletter Marketing:
 I have used the subscribe button at the bottom of the base.html file as advised in the course work this subscribes the user to a mailchimp database. This is temporary and will be upgraded at a later stage. 
-![Email Subscribe](media/email_subscribe.PNG)
+![Email Subscribe](media/email_subscribe2.PNG)
 
 
 ## Data Model
-The below graphic provides an idea of the data model. The Model has been updated to include a Blog which active. The Coupon model is a work in progress and will be worked on after assessment. I have included this in Bugs and Wishlist. 
+The below graphic provides an idea of the data model. The Model has been updated to include a Blog which active as well as a comment model and post sharing system for the Blog.
 
-![Data Model](<media/Models.png>)
+![Data Model](media/Data%20Model%20V2.JPG)
 
 
 ## Additional Changes
@@ -205,6 +212,9 @@ I have added more functionality to the blog application on the site. The followi
 * This shows the success message after the post was shared ![blogmailsent](media/Blog%20Email%20sent%20Example.PNG)
 
 * The ability for a user to add a comment to a post 
+* Here is an example of someone adding a comment to a blog post ![commentblog](media/Blog%20Adding%20a%20Comment.PNG)
+* This is followed by a rendered comment message ![commentmessage](media/Blog%20Comment%20Added.PNG)
+* The comment then shows up on the blog ![blogcomment](media/Blog%20Comment.PNG)
 
 ## Deployment
 
@@ -334,7 +344,8 @@ Open Heroku.
 ## Credits:
 I have learned a lot from these resources they helped me along the way each time I got stuck in my progress. 
 
-1. [Django By Exmaple](https://github.com/PacktPublishing/Django-4-by-example)
+1. [The Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/)
+2. [Django By Exmaple](https://github.com/PacktPublishing/Django-4-by-example)
 
 ## Acknowledgements:
 
@@ -350,7 +361,7 @@ I would like to thank:
 
 ## Bugs Fixes and Project Continuation Wishlist
 At the time of resubmission realise that I would like to document testing further. I have created a Blog Model and Implemented it.
-I also started a Coupon Model but changed my mind to the idea of creating comments on the blog application. This has been completed.  I would like to take this section live after the assessment is complete. I would also like to take the ecommerce section live and convert the stripe keys to live keys and begin actively promoting the website as an e-commerce business with a new domain. 
+I also started a Coupon Model but changed my mind to the idea of creating comments on the Blog application. This has been completed.  I would like to take this section live after the assessment is complete. I would also like to take the ecommerce section live and convert the stripe keys to live keys and begin actively promoting the website as an e-commerce business with a new domain. 
 
 I have attempted to take learnings from outside the course and have been advised to use a book called Django By Example which I will use to further develop this site or redevelop it from the beginning using the course material and the book. 
 
