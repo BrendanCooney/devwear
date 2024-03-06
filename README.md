@@ -151,6 +151,7 @@ USER STORY: <Feel my personal and payment information is safe and secure>#19
 As a Shopper I can capability so that ** I can onfidently provide the needed information to make a purchase **
 
 
+
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
 The Seo is foucussed on people that like apparel and that are developers. The appropriate key words have been added to the Meta Section of base.html 
@@ -194,6 +195,16 @@ The below graphic provides an idea of the data model. The Model has been updated
 
 ![Data Model](<media/Models.png>)
 
+
+## Additional Changes
+
+I have added more functionality to the blog application on the site. The following has been added:
+* The ability to share a post by email 
+* Here is an example of the process ![SharePost](media/Blog%20Share%20a%20post.PNG)
+* Here is an example to the shared post being recieved ![sharedpostpic](media/Blog%20Comment%20Email%20Recieved.PNG)
+* This shows the success message after the post was shared ![blogmailsent](media/Blog%20Email%20sent%20Example.PNG)
+
+* The ability for a user to add a comment to a post 
 
 ## Deployment
 
