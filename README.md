@@ -142,6 +142,7 @@ As a Shopper I can Easily see what I've serached for and the number of results s
 
 USER STORY: <Easily select the size and quantity of a product>#15
 As a Shopper I can Easily select the size and quantity of a product so that Ensure I don’t accidentally select the wrong product quantity or size
+![size](media/sizes.PNG)
 
 
 USER STORY: <View Items in my bag to be purchased>#16
@@ -150,9 +151,13 @@ As a Shopper I can View Items in my bag to be purchased so that Identify the tot
 
 USER STORY: <Adjsut the quantity of a product when purchasing it>#17
 As a Shopper I can Adjsut the quantity of a product when purchasing it so that Easily make changes to my purchase before checkout
+![purchase](media/totalpurchase.PNG)
+![bag](media/bag.PNG)
 
 USER STORY: <Easily enter my payment information>#18
 As a Shopper I can Easily enter my payment information so that I can checkout quickly with no hassles
+![card](media/card.PNG)
+
 
 USER STORY: <Feel my personal and payment information is safe and secure>#19
 As a Shopper I can feel secure so that ** I can confidently provide the needed information to make a purchase **
